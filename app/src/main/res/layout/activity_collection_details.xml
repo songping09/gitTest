@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:id="@id/root"
+    >
+
+    <include
+        layout="@layout/subview_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+        <com.cjj.MaterialRefreshLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/refreshLayout"
+            android:layout_below="@id/include_title"
+            android:layout_above="@id/include_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/material_blue"
+            app:overlay="false"
+            app:wave_show="false"
+            >
+            <android.support.v7.widget.RecyclerView
+                android:id="@id/recycleView_collection_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                />
+        </com.cjj.MaterialRefreshLayout>
+    </FrameLayout>
+</LinearLayout>

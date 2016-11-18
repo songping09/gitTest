@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/root_daily_tips"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b3000000"
+    android:orientation="vertical"
+    android:clickable="true">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        xmlns:fresco="http://schemas.android.com/apk/res-auto"
+        android:id="@id/img_daily_tips"
+        android:layout_width="270.0dip"
+        android:layout_height="480.0dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60.0dip"
+        fresco:placeholderImage="@drawable/loading_placeholder"
+        fresco:placeholderImageScaleType="fitXY"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_daily_tips"
+        android:layout_marginTop="30.0dip"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@id/img_btn_wechat"
+            android:layout_width="32.0dip"
+            android:layout_height="32.0dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_dailytips_wechat" />
+
+        <ImageView
+            android:id="@id/img_btn_moments"
+            android:layout_width="32.0dip"
+            android:layout_height="32.0dip"
+            android:layout_marginLeft="55.0dip"
+            android:layout_marginRight="55.0dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_dailytips_moments" />
+
+        <ImageView
+            android:id="@id/img_btn_download"
+            android:layout_width="32.0dip"
+            android:layout_height="32.0dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_dailytips_download" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@id/img_btn_off"
+        android:layout_width="32.0dip"
+        android:layout_height="32.0dip"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="26.0dip"
+        android:layout_toLeftOf="@id/img_daily_tips"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_dailytips_off" />
+</RelativeLayout>

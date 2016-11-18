@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bwf.lgqingdan">
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <application
+
+        android:name=".QingdanApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/lanch_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".gui.activity.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".gui.activity.SplashActivity"></activity>
+        <activity android:name=".gui.activity.MainActivity"> </activity>
+        <activity android:name=".gui.activity.ArticleDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            > </activity>
+        <activity android:name=".gui.activity.CollectionDetailActivity"></activity>
+        <activity android:name=".gui.activity.ReputationThingActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            ></activity>
+        <activity android:name=".gui.activity.ThingDetailActivity"></activity>
+        <activity android:name=".gui.activity.AllCategoryActivity"></activity>
+        <activity android:name=".gui.activity.ReputationsListActivity"></activity>
+        <activity android:name=".gui.activity.RelatedThingActivity"></activity>
+        <activity android:name=".gui.activity.ThingDescribeActivity"></activity>
+        <activity android:name=".gui.activity.BuyLinksActivity"></activity>
+        <activity android:name=".gui.activity.BuyActivity"></activity>
+    </application>
+
+</manifest>

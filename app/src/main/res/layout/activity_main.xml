@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="com.bwf.lgqingdan.gui.activity.MainActivity">
+    <android.support.v4.view.ViewPager
+        android:id="@id/viewpager_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.100000024dip"
+        android:background="#ff898989" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_navigation_bar_height"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+        <LinearLayout
+            android:id="@id/tab_list"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <CheckedTextView
+                android:id="@id/toggleButton_home_list"
+                android:layout_width="@dimen/main_tab_height"
+                android:layout_height="@dimen/main_tab_height"
+                android:background="@drawable/toggle_button_home_list"
+                android:focusable="false"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/tab_thing"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <CheckedTextView
+                android:id="@id/toggleButton_home_thing"
+                android:layout_width="@dimen/main_tab_height"
+                android:layout_height="@dimen/main_tab_height"
+                android:background="@drawable/toggle_button_home_thing"
+                android:focusable="false"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@id/tab_me"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <CheckedTextView
+                android:id="@id/toggleButton_home_me"
+                android:layout_width="@dimen/main_tab_height"
+                android:layout_height="@dimen/main_tab_height"
+                android:layout_gravity="center"
+                android:background="@drawable/toggle_button_home_me"
+                android:focusable="false"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

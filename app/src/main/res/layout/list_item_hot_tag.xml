@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="64.0dip"
+    android:gravity="center">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        xmlns:fresco="http://schemas.android.com/apk/res-auto"
+        android:id="@id/iv_item_hot_tag_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        fresco:placeholderImage="@drawable/loading_placeholder"
+        fresco:placeholderImageScaleType="fitCenter"
+        fresco:fadeDuration="1500"/>
+
+    <TextView
+        android:id="@id/tv_item_hot_tag"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:background="#4d000000"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:shadowColor="#80000000"
+        android:shadowDx="2.0"
+        android:shadowDy="2.0"
+        android:shadowRadius="1.0"
+        android:textColor="@color/white"
+        android:textSize="14.0sp" />
+    <TextView
+        android:id="@id/tv_item_hot_check_more"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/check_more"
+        android:textColor="@color/text_check_more"
+        android:textSize="14.0sp"
+        android:visibility="gone"
+        android:gravity="center"
+        android:background="@drawable/text_check_more_bg"/>
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff9099a7"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/subview_search_view"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/actionBarSize"
+        />
+
+    <com.cjj.MaterialRefreshLayout
+        android:id="@id/refreshLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingRight="16.0dip" android:paddingLeft="16.0dip"
+                android:paddingBottom="16.0dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:text="@string/text_great_category"
+                    android:textColor="#ff9099a7"
+                    android:textSize="15.0sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.5dip"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginTop="2.0dip"
+                    android:background="@drawable/comment_dash_line"
+                    android:layerType="software"/>
+
+                <com.bwf.lgqingdan.gui.view.NestingGridView
+                    android:id="@id/rgv_great_category"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="14.0dip"
+                    android:numColumns="3"
+                    android:scrollbars="none"
+                    android:verticalSpacing="10.0dip" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:text="@string/text_hot_tag"
+                    android:textColor="#ff9099a7"
+                    android:textSize="15.0sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.5dip"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginTop="2.0dip"
+                    android:background="@drawable/comment_dash_line"
+                    android:layerType="software"/>
+
+                <com.bwf.lgqingdan.gui.view.NestingGridView
+                    android:id="@id/rgv_hot_tag"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="14.0dip"
+                    android:numColumns="3"
+                    android:scrollbars="none"
+                    android:verticalSpacing="10.0dip" />
+            </LinearLayout>
+        </ScrollView>
+    </com.cjj.MaterialRefreshLayout>
+</LinearLayout>

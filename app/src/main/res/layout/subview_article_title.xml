@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y155">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/title_bigimg_article_detail"
+            fresco:placeholderImage="@drawable/loading_placeholder"
+            fresco:placeholderImageScaleType="fitCenter"
+            android:scaleType="centerCrop"
+            fresco:fadeDuration="1500"
+            />
+        <TextView
+            android:id="@id/rela_special_tag"
+            android:layout_width="44.0dip"
+            android:layout_height="30.0dip"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/main_item_bg_tag"
+            android:gravity="center"
+            android:paddingBottom="3.0dip"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:paddingTop="3.0dip"
+            android:text="文章"
+            android:textColor="#ff4a4a4a"
+            android:textSize="10.0sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        >
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@id/textview_title_article_detail"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            />
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="34.0dip"
+                android:layout_height="34.0dip"
+                android:id="@id/imageview_author_article_detail"
+                android:scaleType="centerInside"
+                fresco:placeholderImage="@drawable/llist_img_default_avatar"
+                fresco:placeholderImageScaleType="fitCenter"
+                fresco:fadeDuration="1000"
+                fresco:roundAsCircle="true"
+                />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:id="@id/textview_author_article_detail"
+                android:layout_toRightOf="@id/imageview_author_article_detail"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@id/textview_publish_time_article_detail"
+                android:layout_below="@id/textview_author_article_detail"
+                android:layout_alignParentRight="true"
+                android:textSize="12sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@id/textview_tag_article_detail"
+                android:textSize="12sp"
+                android:layout_alignLeft="@id/textview_author_article_detail"
+                android:layout_below="@id/textview_author_article_detail"
+                android:layout_toLeftOf="@id/textview_publish_time_article_detail"
+                android:layout_marginRight="20dp"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

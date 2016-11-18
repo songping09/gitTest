@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_item_thing_bg"
+        android:orientation="vertical">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            xmlns:fresco="http://schemas.android.com/apk/res-auto"
+            android:id="@id/img_item_tag_details_things_cover"
+            android:layout_width="fill_parent"
+            android:layout_height="165dp"
+            android:layout_marginLeft="1.0dip"
+            android:layout_marginRight="1.0dip"
+            android:layout_marginTop="1.0dip"
+            android:scaleType="centerCrop"
+            fresco:placeholderImage="@drawable/loading_placeholder"
+            fresco:placeholderImageScaleType="fitXY"
+            fresco:fadeDuration="1000" />
+
+        <TextView
+            android:id="@id/tv_item_tag_details_things_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginLeft="7.0dip"
+            android:layout_marginTop="5.0dip"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="#ff898989"
+            android:textSize="13.0sp" />
+
+        <TextView
+            android:id="@id/tv_item_tag_details_things_content"
+            android:layout_width="wrap_content"
+            android:layout_height="36.0dip"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginLeft="7.0dip"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text=""
+            android:textColor="@color/theme_color_text_balck"
+            android:textSize="13.0sp" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5.0dip">
+
+            <TextView
+                android:id="@id/tv_item_tag_details_things_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginLeft="7.0dip"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="$100"
+                android:textColor="#ff7c7bb7"
+                android:textSize="13.0sp" />
+
+            <TextView
+                android:id="@id/tv_item_tag_details_things_like_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="7.0dip"
+                android:gravity="center"
+                android:text="45"
+                android:textColor="#ff848484"
+                android:textSize="14.0sp" />
+
+            <ImageView
+                android:id="@id/img_item_tag_details_things_like"
+                android:layout_width="14.0dip"
+                android:layout_height="12.0dip"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="4.0dip"
+                android:layout_marginTop="8.0dip"
+                android:layout_toLeftOf="@id/tv_item_tag_details_things_like_count"
+                android:src="@drawable/home_card_img_heart_nor" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

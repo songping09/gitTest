@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bwf.lgqingdan.gui.view.CustomRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refreshLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    app:overlay="false"
+    app:wave_show="false"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+
+        <android.support.design.widget.CoordinatorLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@id/appBarLayout_main"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.design.widget.CollapsingToolbarLayout
+                    app:statusBarScrim="@android:color/transparent"
+                    app:contentScrim="?colorPrimary"
+                    android:id="@id/collapsingToolbarLayout_main"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    app:collapsedTitleGravity="center"
+                    app:layout_scrollFlags="exitUntilCollapsed|scroll"
+                    app:titleEnabled="false">
+
+                    <include
+                        layout="@layout/subview_viewpager"/>
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@id/toolbar_main"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_collapseMode="pin">
+
+                        <include layout="@layout/main_title" />
+                    </android.support.v7.widget.Toolbar>
+                </android.support.design.widget.CollapsingToolbarLayout>
+
+                <android.support.design.widget.TabLayout
+                    android:id="@id/tabLayout_main"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/tablelayout_height"
+                    app:tabBackground="@color/windowBackground"
+                    app:tabIndicatorColor="@color/tabIndicatorColor"
+                    app:tabMode="scrollable"
+                    app:tabSelectedTextColor="@color/tabSelectedTextColor"
+                    app:tabTextColor="@color/tabTextColor" />
+            </android.support.design.widget.AppBarLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@id/viewPager_main_fragment"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+        </android.support.design.widget.CoordinatorLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/loading_placeholder"
+            android:scaleType="fitCenter"
+            android:id="@id/imageView_subview_main_empty"
+            android:layout_gravity="center"
+            android:background="#22E5E5E5"
+            >
+        </ImageView>
+    </FrameLayout>
+</com.bwf.lgqingdan.gui.view.CustomRefreshLayout>

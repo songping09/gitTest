@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/toolbar"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/actionBarSize"
+    android:background="@color/colorPrimary"
+    app:contentInsetEnd="0.0dip"
+    app:contentInsetLeft="0.0dip"
+    app:contentInsetRight="0.0dip"
+    app:contentInsetStart="0.0dip">
+
+    <TextView
+        android:id="@id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ellipsize="end"
+        android:maxEms="8"
+        android:maxLines="1"
+        android:text="Title"
+        android:textColor="@color/white"
+        android:textSize="18.0sp" />
+
+    <ImageButton
+        android:id="@id/back"
+        android:layout_width="@dimen/actionBarSize"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center|left"
+        android:background="#00000000"
+        android:paddingBottom="12.0dip"
+        android:paddingTop="12.0dip"
+        android:scaleType="centerInside"
+        android:src="@drawable/selector_top_left_back" />
+
+    <TextView
+        android:id="@id/textView_title_right"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center|right"
+        android:enabled="false"
+        android:gravity="center"
+        android:paddingRight="12.0dip"
+        android:text="完成"
+        android:textColor="@color/color_title_right_text_state"
+        android:textSize="16.0sp"
+        android:visibility="gone" />
+</android.support.v7.widget.Toolbar>

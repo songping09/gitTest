@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">LgQingdan</string>
+    <string name="appbar_scrolling_view_behavior">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="noMoreData">没有更多数据了哦~</string>
+    <string name="loadDataFailed">获取数据失败</string>
+    <string name="loadDataFailedAndClickRetry">获取数据失败，点我重试</string>
+    <string name="button_text_check_thing">查看商品</string>
+    <string name="text_input_reply">从这里开始输入...</string>
+    <string name="comments_area">评论区</string>
+    <string name="article_lick_cont">喜欢(%1$d)</string>
+    <string name="article_comments_cont">评论(%1$d)</string>
+    <string name="related_articles">相关文章</string>
+    <string name="collection_detail">专题详情</string>
+    <string name="loading">加载中...</string>
+    <string name="text_great_category">精选分类</string>
+    <string name="text_hot_tag">热门标签</string>
+    <string name="text_search_hint">搜索感兴趣的文章或商品</string>
+    <string name="check_more">查看更多</string>
+    <string name="text_input_search_things">输入关键字筛选商品</string>
+    <string name="cancel">取消</string>
+    <string name="review_count">热门</string>
+    <string name="rating_score">评分</string>
+    <string name="brand_name">名称</string>
+    <string name="review">点评</string>
+    <string name="score_and_review">%1$s分（%2$d人点评）</string>
+    <string name="text_no_review_topic_thing_prompt">没有你想点评的商品？</string>
+    <string name="text_btn_review_other_thing">点评其他商品</string>
+    <string name="no_Search_data">相关数据为空</string>
+
+
+    <string name="score_and_review2">%1$s分（%2$d人评分）</string>
+    <string name="text_no_rating_score">暂无评分</string>
+    <string name="thingDescribe">商品描述</string>
+    <string name="buyChannel">购买渠道</string>
+    <string name="user_reviews">用户点评</string>
+    <string name="all_reviews_count">全部点评(%1$d)</string>
+    <string name="write_reviews">写点评</string>
+    <string name="share">分享</string>
+    <string name="comment">评论</string>
+    <string name="thing_detail">商品详情</string>
+    <string name="thing_price">%1$s起</string>
+    <string name="thing_detail_like_num">喜欢(%1$d)</string>
+    <string name="thing_detail_having_num">拥有(%1$d)</string>
+    <string name="text_included_article">该商品收录在以下文章</string>
+    <string name="reputations_list">口碑清单</string>
+    <string name="related_thing">相关商品</string>
+    <string name="loadFailed_please_pullToRefresh">获取失败，下拉重新获取</string>
+    <string name="thing_describe">商品描述</string>
+    <string name="text_buylink_top_prompt">温馨提示：购买渠道来自第三方商家，客服和售后等服务由商家直接负责。</string>
+</resources>

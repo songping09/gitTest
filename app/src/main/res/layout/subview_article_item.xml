@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="150dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        xmlns:fresco="http://schemas.android.com/apk/res-auto"
+        android:id="@id/img_article_item"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        fresco:placeholderImage="@drawable/loading_placeholder"
+        fresco:placeholderImageScaleType="fitCenter"
+        android:scaleType="centerCrop"
+        fresco:fadeDuration="1500" />
+
+    <TextView
+        android:id="@id/textView_article_item"
+        android:layout_width="fill_parent"
+        android:layout_height="70.0dip"
+        android:layout_alignBottom="@id/img_article_item"
+        android:background="@drawable/img_rela_article_alpha"
+        android:gravity="bottom"
+        android:lines="2"
+        android:paddingLeft="5.0dip"
+        android:paddingRight="5.0dip"
+        android:paddingBottom="3.0dip"
+        android:text="哈哈哈哈哈哈哈哈达拉斯惊呆了加福禄寿看到就达拉斯惊呆了加福禄寿看到就达拉斯惊呆了加福禄寿看到就"
+        android:textColor="@color/white"
+        android:textSize="13.0sp" />
+</RelativeLayout>

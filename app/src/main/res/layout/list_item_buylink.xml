@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_item_thing_bg"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="15.0dip">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            xmlns:fresco="http://schemas.android.com/apk/res-auto"
+            android:id="@id/img_logo"
+            android:layout_width="24.0dip"
+            android:layout_height="24.0dip"
+            android:scaleType="fitXY"
+            fresco:placeholderImage="@drawable/icon_buylink_def_logo"
+            fresco:placeholderImageScaleType="fitCenter"
+            fresco:fadeDuration="1500"
+            fresco:roundedCornerRadius="6dp"
+             />
+
+        <TextView
+            android:id="@id/textView_platform"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:layout_toRightOf="@id/img_logo"
+            android:text="淘宝"
+            android:textColor="@color/theme_color_text_balck"
+            android:textSize="16.0sp" />
+        <TextView
+            android:id="@id/textView_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="购买"
+            android:textColor="@color/theme_color_text_dan_purple"
+            android:textSize="16.0sp" />
+        <TextView
+            android:id="@id/textView_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17.0dip"
+            android:layout_toLeftOf="@id/textView_buy"
+            android:text="$100"
+            android:textColor="@color/theme_color_text_dan_purple"
+            android:textSize="16.0sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@id/ll_desc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginRight="15.0dip"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.5dip"
+            android:background="@drawable/comment_dash_line" />
+
+        <TextView
+            android:id="@id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:ellipsize="end"
+            android:maxLines="5"
+            android:text="规格：50ml；\n数量：2 ；\n说明：袋装，可自行倒入瓶中进行使用"
+            android:textColor="@color/theme_color_text_desc_gray"
+            android:textSize="12.0sp" />
+    </LinearLayout>
+</LinearLayout>

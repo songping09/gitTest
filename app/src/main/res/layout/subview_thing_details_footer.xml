@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:id="@id/root_thind_detail_footer"
+    >
+
+    <View
+        android:id="@id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="8.0dip"
+        android:background="#fff5f5f5" />
+
+    <TextView
+        android:id="@id/textView_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip"
+        android:layout_marginTop="10.0dip"
+        android:layout_marginBottom="10dp"
+        android:text="@string/text_included_article"
+        android:textColor="#ff9099a7"
+        android:textSize="14.0sp" />
+
+    <com.bwf.lgqingdan.gui.view.NestingGridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@id/gridView_thind_detail_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_temp"
+        android:layout_marginBottom="7.0dip"
+        android:layout_marginLeft="13.0dip"
+        android:layout_marginRight="13.0dip"
+        android:layout_marginTop="7.0dip"
+        android:horizontalSpacing="15dp"
+        android:numColumns="2"
+        android:scrollbars="none" />
+</RelativeLayout>

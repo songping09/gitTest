@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="115.0dip"
+    android:layout_marginLeft="15.0dip"
+    android:layout_marginRight="15.0dip"
+    android:layout_marginTop="12.0dip"
+    android:background="@drawable/shape_item_reputations_list_bg">
+    <com.facebook.drawee.view.SimpleDraweeView
+        xmlns:fresco="http://schemas.android.com/apk/res-auto"
+        android:id="@id/img_item_reputations_list_of_all_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        fresco:placeholderImage="@drawable/loading_placeholder"
+        fresco:placeholderImageScaleType="fitXY"
+        fresco:roundedCornerRadius="@dimen/image_view_corners_reputations_list_item"
+        fresco:fadeDuration="1000" />
+
+    <TextView
+        android:id="@id/tv_item_reputations_list_of_all_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30.0dip"
+        android:maxLines="1"
+        android:text="润唇膏"
+        android:textColor="@color/theme_color_text_balck"
+        android:textSize="24.0sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_item_reputations_list_of_all_title"
+        android:layout_marginTop="12.0dip"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5.0dip"
+            android:text="商品数"
+            android:textColor="@color/text_gray_item_reputations_list_small"
+            android:textSize="14.0sp" />
+
+        <TextView
+            android:id="@id/tv_thing_num"
+            android:layout_width="60.0dip"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="12"
+            android:textColor="@color/text_gray_item_reputations_list_small"
+            android:textSize="14.0sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5.0dip"
+            android:text="点评数"
+            android:textColor="@color/text_gray_item_reputations_list_small"
+            android:textSize="14.0sp" />
+
+        <TextView
+            android:id="@id/tv_review_num"
+            android:layout_width="60.0dip"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="123"
+            android:textColor="@color/text_gray_item_reputations_list_small"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@id/img_mark"
+        android:layout_width="18.0dip"
+        android:layout_height="14.0dip"
+        android:layout_marginTop="17.0dip"
+        android:layout_toRightOf="@id/tv_item_reputations_list_of_all_title"
+        android:scaleType="centerInside"
+        android:visibility="gone" />
+</RelativeLayout>

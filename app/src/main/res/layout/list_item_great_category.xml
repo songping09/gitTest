@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="64.0dip"
+    >
+    <TextView
+        android:id="@id/tv_item_great_category"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="9.0dip"
+        android:paddingTop="7.0dip"
+        android:text=""
+        android:textColor="#4a001544"
+        android:textSize="14.0sp"
+        android:textStyle="bold" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@id/iv_item_great_category"
+        android:layout_width="51.0dip"
+        android:layout_height="51.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/tv_item_great_category"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:id="@id/tv_item_great_category_check_more"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/check_more"
+        android:textColor="@color/text_check_more"
+        android:textSize="14.0sp"
+        android:background="@drawable/text_check_more_bg"
+        android:visibility="gone" />
+</RelativeLayout>

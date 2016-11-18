@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="12.0dip"
+    android:paddingRight="12.0dip"
+    android:paddingTop="14.0dip">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        xmlns:fresco="http://schemas.android.com/apk/res-auto"
+        android:id="@id/imageView_collection_detail_article_icon"
+        android:layout_width="120.0dip"
+        android:layout_height="82.0dip"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        fresco:placeholderImage="@drawable/loading_placeholder"
+        fresco:placeholderImageScaleType="fitCenter"
+        fresco:fadeDuration="1500"
+        fresco:roundedCornerRadius="3dp"
+        />
+
+    <TextView
+        android:id="@id/textView_collection_detail_article_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_toRightOf="@id/imageView_collection_detail_article_icon"
+        android:maxLines="2"
+        android:text="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈"
+        android:textColor="#ff4a4a4a"
+        android:textSize="14.0sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="24.0dip"
+        android:layout_alignBottom="@id/imageView_collection_detail_article_icon"
+        android:layout_alignLeft="@id/textView_collection_detail_article_title"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingRight="15.0dip">
+
+        <ImageView
+            android:layout_width="15.0dip"
+            android:layout_height="15.0dip"
+            android:src="@drawable/home_card_img_heart_nor" />
+
+        <TextView
+            android:id="@id/textView_article_num_liked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:text="0000"
+            android:textColor="@color/grey"
+            android:textSize="12.0sp" />
+
+        <ImageView
+            android:layout_width="15.0dip"
+            android:layout_height="15.0dip"
+            android:layout_marginLeft="15.0dip"
+            android:src="@drawable/home_img_eye_nor" />
+
+        <TextView
+            android:id="@id/textView_num_reviews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:text="0000"
+            android:textColor="@color/grey"
+            android:textSize="12.0sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.5dip"
+        android:layout_below="@id/imageView_collection_detail_article_icon"
+        android:layout_marginTop="14.0dip"
+        android:background="@drawable/comment_dash_line"
+        android:layerType="software" />
+</RelativeLayout>
