@@ -150,6 +150,7 @@ public class MainFragment extends FragmentBase implements MainView {
         viewPagerMainListSlide.setAdapter(batchingPagerAdapter);
         imageViewSubviewMainEmpty.setVisibility(View.GONE);
         refreshLayout.finishRefresh();
+        Log.d("MainFragment", "slides.size():" + slides.size());
     }
 
     private boolean isInitTabs;
